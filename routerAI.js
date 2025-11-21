@@ -60,3 +60,4 @@ export async function fetchQuizQuestions(metadata) {
 
   return JSON.parse(jsonMatch[0]);
 }
+
