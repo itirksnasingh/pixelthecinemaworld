@@ -63,3 +63,4 @@ export async function fetchById(id, type) {
   const details = await fetchFromTMDB(`/${safeType}/${id}`);
   return normalizeEntry({ ...details, media_type: safeType });
 }
+
