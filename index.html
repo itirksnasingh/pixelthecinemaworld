@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PIXEL – Pop Culture Quiz Arena</title>
+  <title>PIXEL – The Cinema World</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -32,6 +32,15 @@
         <div class="results-shell">
           <p class="results-label">Pick your universe</p>
           <div id="searchResults" class="results-grid"></div>
+        </div>
+      </div>
+
+      <div class="mode-selection">
+        <h3 class="mode-title">Choose Your Mode</h3>
+        <div class="mode-buttons">
+          <button id="classicModeBtn" class="mode-btn active">Classic Quiz</button>
+          <button id="emojiModeBtn" class="mode-btn">😎 Emoji Mode</button>
+          <button id="rapidFireBtn" class="mode-btn">⚡ Rapid Fire</button>
         </div>
       </div>
 
@@ -64,6 +73,10 @@
     </section>
 
     <section class="game-screen glass hidden" id="gameScreen">
+      <div class="game-header">
+        <button id="quitBtn" class="quit-btn">❌ Quit</button>
+        <span id="scoreDisplay">Score: 0</span>
+      </div>
       <div class="meta">
         <div class="poster-wrap">
           <img id="poster" alt="Poster" />
@@ -88,7 +101,26 @@
       </div>
       <div class="game-actions">
         <button id="nextBtn" class="secondary" disabled>Next</button>
-        <span id="scoreDisplay">Score: 0</span>
+      </div>
+      
+      <!-- EMOJI MODE UI -->
+      <div class="emoji-mode-panel hidden" id="emojiModePanel">
+        <div class="emoji-display" id="emojiDisplay"></div>
+        <div class="emoji-input-group">
+          <input type="text" id="emojiGuessInput" placeholder="Guess the title..." />
+          <button id="emojiSubmitBtn" class="primary">Submit</button>
+        </div>
+        <p class="emoji-feedback" id="emojiFeedback"></p>
+      </div>
+
+      <!-- RAPID FIRE MODE UI -->
+      <div class="rapid-fire-panel hidden" id="rapidFirePanel">
+        <div class="rapid-timer-display">
+          <span id="rapidTimer">30s</span>
+        </div>
+        <div class="rapid-progress">
+          <span id="rapidQuestionCounter">Question 1 / 5</span>
+        </div>
       </div>
     </section>
 
