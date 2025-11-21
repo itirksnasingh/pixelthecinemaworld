@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIXEL – Pop Culture Quiz Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="neon-grid"></div>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">PIXEL</span>
+      <p class="tagline">PIXEL — Decode the Screen</p>
+    </div>
+    <div class="status-pill" id="connectionStatus">Offline</div>
+  </header>
+
+  <main>
+    <section class="hero-card glass" id="homeScreen">
+      <div class="search-block">
+        <label for="titleInput">Summon a title</label>
+        <div class="input-group">
+          <input id="titleInput" type="text" placeholder="Search movie, anime, or game" />
+          <button id="startBtn" class="primary">Start</button>
+        </div>
+        <p class="hint">
+          Play. Think. Dominate.</p>
+        <div class="results-shell">
+          <p class="results-label">Pick your universe</p>
+          <div id="searchResults" class="results-grid"></div>
+        </div>
+      </div>
+
+      <div class="levels">
+        <article class="level-card locked" data-level="beginner">
+          <div class="level-header">
+            <span class="badge">Lv. 01</span>
+            <h3>Beginner</h3>
+          </div>
+          <p>Warm-up trivia · 3 quick hits</p>
+          <span class="lock">Locked</span>
+        </article>
+        <article class="level-card locked" data-level="intermediate">
+          <div class="level-header">
+            <span class="badge">Lv. 02</span>
+            <h3>Intermediate</h3>
+          </div>
+          <p>Plot twists & hidden lore</p>
+          <span class="lock">Locked</span>
+        </article>
+        <article class="level-card locked" data-level="master">
+          <div class="level-header">
+            <span class="badge">Lv. 03</span>
+            <h3>Master</h3>
+          </div>
+          <p>Only legends make it here</p>
+          <span class="lock">Locked</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="game-screen glass hidden" id="gameScreen">
+      <div class="meta">
+        <div class="poster-wrap">
+          <img id="poster" alt="Poster" />
+        </div>
+        <div class="meta-text">
+          <h2 id="title">Title</h2>
+          <p id="genre">Genre</p>
+          <p id="year">Year</p>
+          <p id="overview">Overview</p>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-info">
+          <span id="questionCounter">0 / 0</span>
+          <span id="timer">00s</span>
+        </div>
+        <div class="bar"><span id="progressBar"></span></div>
+      </div>
+      <div class="question-panel">
+        <h3 id="questionText">Question will appear here</h3>
+        <div class="options" id="options"></div>
+      </div>
+      <div class="game-actions">
+        <button id="nextBtn" class="secondary" disabled>Next</button>
+        <span id="scoreDisplay">Score: 0</span>
+      </div>
+    </section>
+
+    <section class="results-screen glass hidden" id="resultScreen">
+      <div class="result-header">
+        <h2>Badge Earned</h2>
+        <p id="resultSummary">Nice run!</p>
+      </div>
+      <div class="badge-display" id="badgeDisplay"></div>
+      <div class="result-actions">
+        <button id="retryBtn" class="secondary">Play Again</button>
+        <button id="saveBadgeBtn" class="primary">Save Badge</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data: TMDB · Questions: OpenRouter · Built for localhost</p>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
