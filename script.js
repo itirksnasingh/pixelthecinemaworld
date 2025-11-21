@@ -1,9 +1,9 @@
-import { searchTitles, fetchById } from "./tmdb.js";
-import { searchGames, fetchGameById } from "./rawg.js";
-import { searchMusic, fetchRecordingById, fetchArtistById } from "./music.js";
-import { fetchQuizQuestions } from "./routerAI.js";
-import { normalizeLevels, createQuizState, getCurrentQuestion, getCurrentLevel, recordAnswer, advance } from "./questions.js";
-import { determineBadge, saveBadge, getSavedBadges } from "./badges.js";
+import { searchTitles, fetchById } from "tmdb.js";
+import { searchGames, fetchGameById } from "rawg.js";
+import { searchMusic, fetchRecordingById, fetchArtistById } from "music.js";
+import { fetchQuizQuestions } from "routerAI.js";
+import { normalizeLevels, createQuizState, getCurrentQuestion, getCurrentLevel, recordAnswer, advance } from "questions.js";
+import { determineBadge, saveBadge, getSavedBadges } from "badges.js";
 
 const ui = {
   home: document.getElementById("homeScreen"),
