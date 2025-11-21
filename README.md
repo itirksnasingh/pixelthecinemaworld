@@ -27,10 +27,8 @@ The project uses live data from **TMDB (The Movie Database)** and generates smar
 ## 🌐 Live Website
 
 👉 **Try it here:**  
-PASTE YOUR LIVE LINK HERE ONCE YOU ENABLE GITHUB PAGES
+https://itirksnasingh.github.io/pixelthecinemaworld/
 
-yaml
-Copy code
 
 ---
 
@@ -54,8 +52,7 @@ Copy code
 ┣ 📂 data
 ┗ 📄 index.html
 
-yaml
-Copy code
+
 
 ---
 
@@ -71,5 +68,5 @@ Copy code
 
 ## 🙋‍♂️ Created by
 
-**Shreyansh Singh**  
+**Sanskriti Singh**  
 Personal Project – 2025 
