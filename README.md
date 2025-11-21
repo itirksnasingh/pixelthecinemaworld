@@ -1,4 +1,3 @@
-
 # 🌌 PIXEL – The Cinema World
 
 **PIXEL – The Cinema World** is an interactive pop-culture quiz web app that lets users explore and test their knowledge about **movies, TV shows, anime, games, and music** using real data.
