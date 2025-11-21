@@ -1,11 +1,11 @@
-import { searchTitles, fetchById } from "./tmdb.js";
-import { searchGames, fetchGameById } from "./rawg.js";
-import { searchMusic, fetchRecordingById, fetchArtistById } from "./music.js";
-import { fetchQuizQuestions } from "./routerAI.js";
-import { normalizeLevels, createQuizState, getCurrentLevel, recordAnswer, LEVELS, markQuestionUsed, isQuestionUsed, resetUsedQuestions } from "./questions.js";
-import { determineBadge, saveBadge, getSavedBadges } from "./badges.js";
-import { generateEmojiHints, checkEmojiAnswer, markEmojiTitleUsed, isEmojiTitleUsed, resetEmojiUsed } from "./modes/emoji.js";
-import { prepareRapidQuestion, checkRapidAnswer, shuffleArray } from "./modes/rapidfire.js";
+import { searchTitles, fetchById } from "tmdb.js";
+import { searchGames, fetchGameById } from "rawg.js";
+import { searchMusic, fetchRecordingById, fetchArtistById } from "music.js";
+import { fetchQuizQuestions } from "routerAI.js";
+import { normalizeLevels, createQuizState, getCurrentLevel, recordAnswer, LEVELS, markQuestionUsed, isQuestionUsed, resetUsedQuestions } from "questions.js";
+import { determineBadge, saveBadge, getSavedBadges } from "badges.js";
+import { generateEmojiHints, checkEmojiAnswer, markEmojiTitleUsed, isEmojiTitleUsed, resetEmojiUsed } from "emoji.js";
+import { prepareRapidQuestion, checkRapidAnswer, shuffleArray } from "rapidfire.js";
 
 const ui = {};
 let uiInitialized = false;
